@@ -24,9 +24,10 @@ data = [
     }
 ]
 
+
 @app.route("/")
 def api_information():
-	return render_template("index.html")
+    return render_template("index.html")
 
 
 @app.route("/cmd/api/data", methods=["GET"])
@@ -41,19 +42,21 @@ def get_data(data_id):
         abort(404)
     return jsonify({"data": tmp_data[0]})
 
+
 @app.route("/cmd/api/data", methods=["POST"])
 def insert_data():
-	if not request.json or not "name" in request.json or not "value" in request.json or not "quality" in request.json:
-		abort(400)
-	else:
-		tmp_data = {
-				"id" : len(data) + 1,
-				"name" : request.json["name"],
-				"value" : request.json["value"],
-				"quality" : request.json["quality"]
-		}
-	data.append(tmp_data)
-	return jsonify({"data" : data}), 201
+    if not request.json or not "name" in request.json or not "value" in request.json or not "quality" in request.json:
+        abort(400)
+    else:
+        tmp_data = {
+            "id": len(data) + 1,
+            "name": request.json["name"],
+            "value": request.json["value"],
+            "quality": request.json["quality"]
+        }
+    data.append(tmp_data)
+    return jsonify({"data": data}), 201
+
 
 @app.route('/cmd/api/data/<int:data_id>', methods=['PUT'])
 def update_data(data_id):
@@ -75,6 +78,7 @@ def update_data(data_id):
     print(str(tmp))
     return jsonify({'PUT tmp': tmp[0]})
 
+
 @app.route('/cmd/api/data/<int:data_id>', methods=['DELETE'])
 def delete_data(data_id):
     tmp = [da for da in data if da["id"] == data_id]
@@ -83,13 +87,15 @@ def delete_data(data_id):
     data.remove(tmp[0])
     return jsonify({'result': True})
 
+
 @app.errorhandler(404)
 def not_found(error):
-	return make_response(jsonify({"error" : "Not found"}), 404)
+    return make_response(jsonify({"error": "Not found"}), 404)
+
 
 @app.errorhandler(400)
 def not_found(error):
-	return make_response(jsonify({"error" : "Bad request"}), 400)
+    return make_response(jsonify({"error": "Bad request"}), 400)
 
 
 if __name__ == "__main__":
