@@ -21,19 +21,13 @@ data = [
         "name": u"tag2",
                 "value": 692.2,
                 u"quality": "good"
-    },
-    {
-        "id": 3,
-        "name": u"tag3",
-                "value": 25.4,
-                u"quality": "good"
     }
 ]
 
 @app.route("/")
 def api_information():
 	return render_template("index.html")
-	
+
 
 @app.route("/cmd/api/data", methods=["GET"])
 def get_all_data():
@@ -61,6 +55,33 @@ def insert_data():
 	data.append(tmp_data)
 	return jsonify({"data" : data}), 201
 
+@app.route('/cmd/api/data/<int:data_id>', methods=['PUT'])
+def update_data(data_id):
+    tmp = [da for da in data if da["id"] == data_id]
+    print(str(tmp))
+    if len(tmp) == 0:
+        abort(404)
+    if not request.json:
+        abort(400)
+    if "name" in request.json and type(request.json["name"]) is not str:
+        abort(400)
+    if "quality" in request.json and type(request.json['quality']) is not str:
+        abort(400)
+    if "value" in request.json and type(request.json["value"]) is not int:
+        abort(400)
+    tmp[0]["name"] = request.json.get("name", tmp[0]["name"])
+    tmp[0]["quality"] = request.json.get("quality", tmp[0]["quality"])
+    tmp[0]["value"] = request.json.get("value", tmp[0]["value"])
+    print(str(tmp))
+    return jsonify({'PUT tmp': tmp[0]})
+
+@app.route('/cmd/api/data/<int:data_id>', methods=['DELETE'])
+def delete_data(data_id):
+    tmp = [da for da in data if da["id"] == data_id]
+    if len(tmp) == 0:
+        abort(404)
+    data.remove(tmp[0])
+    return jsonify({'result': True})
 
 @app.errorhandler(404)
 def not_found(error):

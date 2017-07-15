@@ -23,20 +23,46 @@
 </div>
 <div align="center" style="border:1px solid red">
 <p>POST:</p>
-<p>Download and use <a href="https://www.getpostman.com/apps" target="_blank">Postman</a> app</p>
+<p>Download and use <a href="https://www.getpostman.com/apps" target="_blank">Postman</a>, for API development</p>
 <br>
-<img src="/static/postman.jpg" alt="img not loading" style="width:700px;height:228px; border=5">
+<img src="/static/postman.jpg" alt="postman cmd post" style="width:700px;height:228px; border=5">
 <br>
 <p>Result:</p>
-<img src="/static/postman_result.jpg" alt="img not loading" style="width:250px;height:450px; border=5">
+<img src="/static/web_post.jpg" alt="web after post" style="width:250px;height:450px; border=5">
 <br>
 </div>
+<div align="center" style="border:1px solid red">
 <p>PUT:</p>
-<p>put cmd</p>
+<p>Valid Json</p>
+<p>{"name" : "nulltag", "quality" : "null", "value" : 0} = change all</p>
+<p>{"name" : "nulltag", "quality"} = change 2 parameters</p>
+<p>{"name" : "nulltag"} = change 1 parameter</p>
+<p>If you put an extra dictionary in Json, it will just omit it, and throws it out, but the valid ones are saved</p>
+<p>{"name" : "nulltag", "quality" : "null", "value" : 0, <span style="color: red"> "extra" : "extra atr"}</span>}</p>
+<p>Error handling for POST and PUT:</p>
 <br>
+<img src="/static/errors_for_put_and_post.jpg" alt="error handling" style="width:500px;height:150px; border=5">
+<p>Data before PUT:</p>
+<img src="/static/web_before_put.jpg" alt="web before put" style="width:250px;height:400px; border=5">
+<br>
+<p>PUT, you can add 1 or more parameters to the PUT request, here all is used</p>
+<img src="/static/postman_before_put_send.jpg" alt="postman cmd put" style="width:500px;height:300px; border=5">
+<br>
+<p>Result after PUT:</p>
+<img src="/static/web_result_after_put.jpg" alt="web after put" style="width:250px;height:400px; border=5">
+</div>
+<div align="center" style="border:1px solid red">
 <p>DELETE:</p>
-<p>delete cmd</p>
+<p>Data before DELETE:</p>
+<img src="/static/web_before_put.jpg" alt="postman data after" style="width:250px;height:400px; border=5">
 <br>
+<p>Result after DELETE:</p>
+<img src="/static/postman_before_delete.jpg" alt="postman before del" style="width:600px;height:170px; border=5">
+<br>
+<img src="/static/web_result_after_del.jpg" alt="web after" style="width:250px;height:400px; border=5">
+</div>
+<br>
+</div>
 <h4>Authentification</h4>
 <p>tbd</p>
 <br>
