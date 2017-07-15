@@ -29,33 +29,11 @@ data = [
                 u"quality": "good"
     }
 ]
-tasks = [
-	{
-		"id" : 1,
-		"title" : u"tag2",
-		"desciption" : "test2",
-		"done" : False
-	}
-]
 
-@app.route("/cmd/api/tasks", methods=["GET"])
-def get_all_tasks():
-    return jsonify({"tasks": tasks})
-
-@app.route('/cmd/api/tasks', methods=['POST'])
-def create_task():
-    if not request.json or not 'title' in request.json:
-        abort(400)
-    task = {
-        'id': tasks[-1]['id'] + 1,
-        'title': request.json['title'],
-        'description': request.json.get('description', ""),
-        'done': False
-    }
-    tasks.append(task)
-    return jsonify({'task': task}), 201
-
-
+@app.route("/")
+def api_information():
+	return render_template("index.html")
+	
 
 @app.route("/cmd/api/data", methods=["GET"])
 def get_all_data():
@@ -66,32 +44,31 @@ def get_all_data():
 def get_data(data_id):
     tmp_data = [da for da in data if da["id"] == data_id]
     if len(tmp_data) == 0:
-    	# call to improved abort function
         abort(404)
     return jsonify({"data": tmp_data[0]})
 
 @app.route("/cmd/api/data", methods=["POST"])
 def insert_data():
-	print("start")
-	if not request.json or not "name" in request.json:
+	if not request.json or not "name" in request.json or not "value" in request.json or not "quality" in request.json:
 		abort(400)
-	tmp_data = {
+	else:
+		tmp_data = {
 				"id" : len(data) + 1,
 				"name" : request.json["name"],
-				"value" : request.json.get("value", ""),
-				"quality" : request.json.get("quality", "")
-	}
+				"value" : request.json["value"],
+				"quality" : request.json["quality"]
+		}
 	data.append(tmp_data)
 	return jsonify({"data" : data}), 201
 
 
-@app.route("/")
-def api_information():
-	return render_template("index.html")
-
 @app.errorhandler(404)
 def not_found(error):
 	return make_response(jsonify({"error" : "Not found"}), 404)
+
+@app.errorhandler(400)
+def not_found(error):
+	return make_response(jsonify({"error" : "Bad request"}), 400)
 
 
 if __name__ == "__main__":
