@@ -8,30 +8,23 @@ from flask import url_for
 from flask.ext.httpauth import HTTPBasicAuth
 # from flask_sqlalchemy import SQLAlchemy
 
+# app modules
 from app import app
+from .database import repository as rep
 auth = HTTPBasicAuth()
 
 # simulating db
-data_repos = [
-    {
-        "id": 1,
-        "name": u"tag1",
-                "value": 492.2,
-                u"quality": "good"
+memory_rep = rep.Repository()
+data_repos = memory_rep.load_repository()
 
-    },
-    {
-        "id": 2,
-        "name": u"tag2",
-                "value": 692.2,
-                u"quality": "good"
-    }
-]
+# version
+version = "V.1.3\n"
+information = "GET / GET/ID /POST(Json) /PUT(Json) /DELETE/ID"
 
 
 @app.route("/")
 def api_information():
-    return render_template("index.html")
+    return render_template("index.html", version=version, information=information)
 
 
 @auth.get_password

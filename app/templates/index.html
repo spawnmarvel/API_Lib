@@ -6,9 +6,18 @@
  		body {
  			background-color: #E6E6FA;
  		}
+ 		p.info {
+
+ 			font-size: 10px;
+ 			padding-right: 2cm;
+ 		}
  	</style>
  </head>
  <body>
+ 	<div align="right" style="border:1px solid red">
+ 	<p class="info">Version: {{ version }}</p>
+ 	<p class="info">{{ information }}</p>
+ 	</div>
  	<div align="left" style="border:1px solid red">
  		<h3>API Lib</h3>
  		<h4>API Lib Commands</h4>
