@@ -12,7 +12,7 @@ from app import app
 auth = HTTPBasicAuth()
 
 # simulating db
-data = [
+data_repos = [
     {
         "id": 1,
         "name": u"tag1",
@@ -28,9 +28,11 @@ data = [
     }
 ]
 
+
 @app.route("/")
 def api_information():
     return render_template("index.html")
+
 
 @auth.get_password
 def get_password(username):
@@ -38,16 +40,17 @@ def get_password(username):
         return "python"
     return None
 
+
 @app.route("/cmd/api/data", methods=["GET"])
-@auth.login_required
+# @auth.login_required
 def get_all_data():
-    return jsonify({"data": data})
+    # return jsonify({"data": data_repos})
+    return jsonify({"data" : [make_public(d) for d in data_repos]})
 
 
 @app.route("/cmd/api/data/<int:data_id>", methods=["GET"])
-
 def get_data(data_id):
-    tmp_data = [da for da in data if da["id"] == data_id]
+    tmp_data = [da for da in data_repos if da["id"] == data_id]
     if len(tmp_data) == 0:
         abort(404)
     return jsonify({"data": tmp_data[0]})
@@ -59,18 +62,18 @@ def insert_data():
         abort(400)
     else:
         tmp_data = {
-            "id": len(data) + 1,
+            "id": len(data_repos) + 1,
             "name": request.json["name"],
             "value": request.json["value"],
             "quality": request.json["quality"]
         }
-    data.append(tmp_data)
-    return jsonify({"data": data}), 201
+    data_repos.append(tmp_data)
+    return jsonify({"data": data_repos}), 201
 
 
 @app.route('/cmd/api/data/<int:data_id>', methods=['PUT'])
 def update_data(data_id):
-    tmp = [da for da in data if da["id"] == data_id]
+    tmp = [da for da in data_repos if da["id"] == data_id]
     print(str(tmp))
     if len(tmp) == 0:
         abort(404)
@@ -91,19 +94,25 @@ def update_data(data_id):
 
 @app.route('/cmd/api/data/<int:data_id>', methods=['DELETE'])
 def delete_data(data_id):
-    tmp = [da for da in data if da["id"] == data_id]
+    tmp = [da for da in data_repos if da["id"] == data_id]
     if len(tmp) == 0:
         abort(404)
     data.remove(tmp[0])
     return jsonify({'result': True})
 
-def make_public(content):
-    new_data = {}
-    for c in content:
-        if f == "id":
-            new_data["uri"] = url_for("get_all_data", )
+# Improving the web service:
+# Insted of returning id's, we can return the full URI that controls the data row
+# So this will not prevent us from making changes to URI in the future
+# The client get the URI ready to be used
+def make_public(data_row):
+    data_new = {}
+    for d in data_row:
+        if d == "id":
+            data_new["uri"] = url_for("get_all_data",data_row_id=data_row["id"], external=True )
         else:
-            new_data[f] = content[f]
+            data_new[d] = data_row[d]
+    return data_new
+
 
 @app.errorhandler(404)
 def not_found(error):
@@ -114,12 +123,14 @@ def not_found(error):
 def not_found(error):
     return make_response(jsonify({"error": "Bad request"}), 400)
 
+
 @app.errorhandler(405)
 def not_found(error):
     return make_response(jsonify({"error": "Method not allowed"}), 405)
 
+
 @auth.error_handler
 def unauthorized():
-    return make_response(jsonify({"error" : "Unauthorized access"}), 403)
+    return make_response(jsonify({"error": "Unauthorized access"}), 403)
 # if __name__ == "__main__":
 #    app.run(debug=True, port=6060)
