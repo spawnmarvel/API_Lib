@@ -20,11 +20,12 @@ data_repos = memory_rep.load_repository()
 # version
 version = "V.1.4\n"
 information = "GET / GET/ID /POST(Json) /PUT(Json) /DELETE/ID"
+to_do = "TO DO: DB, REDIS, BOOSTRAP API PAGE"
 
 
 @app.route("/")
 def api_information():
-    return render_template("index.html", version=version, information=information)
+    return render_template("index.html", version=version, information=information, to_do=to_do)
 
 
 @auth.get_password
