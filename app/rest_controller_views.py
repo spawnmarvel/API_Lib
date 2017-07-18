@@ -18,7 +18,7 @@ memory_rep = rep.Repository()
 data_repos = memory_rep.load_repository()
 
 # version
-version = "V.1.3\n"
+version = "V.1.4\n"
 information = "GET / GET/ID /POST(Json) /PUT(Json) /DELETE/ID"
 
 
@@ -125,5 +125,4 @@ def not_found(error):
 @auth.error_handler
 def unauthorized():
     return make_response(jsonify({"error": "Unauthorized access"}), 403)
-# if __name__ == "__main__":
-#    app.run(debug=True, port=6060)
+
