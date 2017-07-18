@@ -1,0 +1,178 @@
+2017-07-18 22:55:57,044 - INFO - main yea
+2017-07-18 22:55:57,190 - INFO -  * Restarting with stat
+2017-07-18 22:55:57,833 - INFO - main yea
+2017-07-18 22:55:57,971 - WARNING -  * Debugger is active!
+2017-07-18 22:55:57,974 - INFO -  * Debugger PIN: 323-488-347
+2017-07-18 22:55:57,982 - INFO -  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+2017-07-18 22:56:12,707 - INFO - test from rest
+2017-07-18 22:56:12,716 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET / HTTP/1.1" 200 -
+2017-07-18 22:56:12,740 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/postman_get.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,763 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/postman_before_put_send.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,770 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/web_before_put.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,772 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/errors_for_put_and_post.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,775 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/postman_get_id.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,778 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/postman.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,781 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/web_post.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,810 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/web_result_after_put.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,813 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/postman_before_delete.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,819 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/web_result_after_del.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,822 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/postman_basic_auth.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:12,825 - INFO - 127.0.0.1 - - [18/Jul/2017 22:56:12] "GET /static/web_result_unauth_access.jpg HTTP/1.1" 304 -
+2017-07-18 22:56:54,149 - INFO -  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\app\\rest_controller_views.py', reloading
+2017-07-18 22:56:54,187 - INFO -  * Restarting with stat
+2017-07-18 22:56:54,911 - INFO - main yea
+2017-07-18 22:56:55,061 - WARNING -  * Debugger is active!
+2017-07-18 22:56:55,064 - INFO -  * Debugger PIN: 323-488-347
+2017-07-18 22:56:55,073 - INFO -  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+2017-07-18 22:57:13,246 - INFO - get data by id
+2017-07-18 22:57:13,247 - INFO - 127.0.0.1 - - [18/Jul/2017 22:57:13] "GET /cmd/api/data/1 HTTP/1.1" 200 -
+2017-07-18 22:57:39,981 - INFO -  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+2017-07-18 22:57:40,018 - INFO -  * Restarting with stat
+2017-07-18 22:57:40,547 - INFO - main yea
+2017-07-18 22:57:40,728 - WARNING -  * Debugger is active!
+2017-07-18 22:57:40,733 - INFO -  * Debugger PIN: 323-488-347
+2017-07-18 22:57:40,744 - INFO -  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+2017-07-18 22:57:49,951 - INFO -  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+2017-07-18 22:57:49,985 - INFO -  * Restarting with stat
+2017-07-18 22:57:50,706 - INFO - Main started
+2017-07-18 22:57:50,847 - WARNING -  * Debugger is active!
+2017-07-18 22:57:50,850 - INFO -  * Debugger PIN: 323-488-347
+2017-07-18 22:57:50,859 - INFO -  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+2017-07-18 22:57:59,037 - INFO -  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\app\\rest_controller_views.py', reloading
+2017-07-18 22:57:59,073 - INFO -  * Restarting with stat
+2017-07-18 22:57:59,605 - INFO - Main started
+2017-07-18 22:57:59,745 - WARNING -  * Debugger is active!
+2017-07-18 22:57:59,749 - INFO -  * Debugger PIN: 323-488-347
+2017-07-18 22:57:59,757 - INFO -  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+2017-07-18 23:01:45,295 - INFO -  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+2017-07-18 23:01:45,359 - INFO -  * Restarting with stat
+2017-07-18 23:01:45,934 - INFO - Main started
+2017-07-18 23:01:46,074 - WARNING -  * Debugger is active!
+2017-07-18 23:01:46,078 - INFO -  * Debugger PIN: 323-488-347
+2017-07-18 23:01:46,087 - INFO -  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+2017-07-18 23:01:56,307 - INFO -  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+2017-07-18 23:01:56,339 - INFO -  * Restarting with stat
+2017-07-18 23:01:56,891 - INFO - Main started
+2017-07-18 23:01:57,057 - WARNING -  * Debugger is active!
+2017-07-18 23:01:57,061 - INFO -  * Debugger PIN: 323-488-347
+2017-07-18 23:01:57,071 - INFO -  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+2017-07-18 23:02:13,400 - INFO -  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\app\\rest_controller_views.py', reloading
+2017-07-18 23:02:13,437 - INFO -  * Restarting with stat
+2017-07-18 23:02:13,964 - INFO - Main started
+2017-07-18 23:02:14,108 - WARNING -  * Debugger is active!
+2017-07-18 23:02:14,111 - INFO -  * Debugger PIN: 323-488-347
+2017-07-18 23:02:14,120 - INFO -  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+2017-07-18 23:02:32,080 - INFO - get data by id
+2017-07-18 23:02:32,081 - INFO - 127.0.0.1 - - [18/Jul/2017 23:02:32] "GET /cmd/api/data/1 HTTP/1.1" 200 -
+2017-07-18 23:02:55,995 - INFO -  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+2017-07-18 23:02:56,033 - INFO -  * Restarting with stat
+[run.py:13 -             <module>() ] Main started
+[_internal.py:87 -                 _log() ]  * Debugger is active!
+[_internal.py:87 -                 _log() ]  * Debugger PIN: 323-488-347
+[_internal.py:87 -                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[rest_controller_views.py:51 -             get_data() ] get data by id
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:03:09] "GET /cmd/api/data/1 HTTP/1.1" 200 -
+[rest_controller_views.py:51 -             get_data() ] get data by id
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:03:24] "GET /cmd/api/data/1 HTTP/1.1" 200 -
+[rest_controller_views.py:31 -      api_information() ] test from rest
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:03:28] "GET / HTTP/1.1" 200 -
+[_internal.py:87 -                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+2017-07-18 23:04:01,200 - INFO -  * Restarting with stat
+[run.py:13 -             <module>() ] Main started
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[run.py:13 -             <module>() ] Main started
+[_internal.py:87 -                 _log() ]  * Debugger is active!
+[_internal.py:87 -                 _log() ]  * Debugger PIN: 323-488-347
+[_internal.py:87 -                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[rest_controller_views.py:31 -      api_information() ] test from rest
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET / HTTP/1.1" 200 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/postman_get.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/postman_get_id.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/postman.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/web_post.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/errors_for_put_and_post.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/web_before_put.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/postman_before_put_send.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/web_result_after_put.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/postman_before_delete.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/web_result_after_del.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/postman_basic_auth.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:04:33] "GET /static/web_result_unauth_access.jpg HTTP/1.1" 304 -
+[_internal.py:87 -                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[2017-07-18 23:05:43,266 - INFO - run.py:13 -             <module>() ] Main started
+[2017-07-18 23:05:43,413 - WARNING - _internal.py:87 -                 _log() ]  * Debugger is active!
+[2017-07-18 23:05:43,417 - INFO - _internal.py:87 -                 _log() ]  * Debugger PIN: 323-488-347
+[2017-07-18 23:05:43,426 - INFO - _internal.py:87 -                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[2017-07-18 23:05:52,295 - INFO - rest_controller_views.py:31 -      api_information() ] test from rest
+[2017-07-18 23:05:52,302 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET / HTTP/1.1" 200 -
+[2017-07-18 23:05:52,323 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/postman_get.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,327 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/postman_get_id.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,335 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/postman.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,340 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/web_post.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,346 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/errors_for_put_and_post.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,352 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/web_before_put.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,357 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/postman_before_put_send.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,360 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/web_result_after_put.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,365 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/postman_before_delete.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,369 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/web_result_after_del.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,372 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/postman_basic_auth.jpg HTTP/1.1" 304 -
+[2017-07-18 23:05:52,375 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:05:52] "GET /static/web_result_unauth_access.jpg HTTP/1.1" 304 -
+[2017-07-18 23:06:11,512 - INFO - rest_controller_views.py:51 -             get_data() ] get data by id
+[2017-07-18 23:06:11,512 - INFO - _internal.py:87 -                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:06:11] "GET /cmd/api/data/1 HTTP/1.1" 200 -
+[2017-07-18 23:07:17,397 - INFO - _internal.py:87 -                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[2017-07-18 23:07:18,033 : INFO : run.py : 13 :             <module>() ] Main started
+[2017-07-18 23:07:18,174 : WARNING : _internal.py : 87 :                 _log() ]  * Debugger is active!
+[2017-07-18 23:07:18,178 : INFO : _internal.py : 87 :                 _log() ]  * Debugger PIN: 323-488-347
+[2017-07-18 23:07:18,186 : INFO : _internal.py : 87 :                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[2017-07-18 23:07:36,745 : INFO : rest_controller_views.py : 51 :             get_data() ] get data by id
+[2017-07-18 23:07:36,746 : INFO : _internal.py : 87 :                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:07:36] "GET /cmd/api/data/1 HTTP/1.1" 200 -
+[2017-07-18 23:08:13,344 : INFO : _internal.py : 87 :                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\run.py', reloading
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[2017-07-18 23:08:14,077 : INFO : run.py : 14 :             <module>() ] Main started
+[2017-07-18 23:08:14,245 : WARNING : _internal.py : 87 :                 _log() ]  * Debugger is active!
+[2017-07-18 23:08:14,248 : INFO : _internal.py : 87 :                 _log() ]  * Debugger PIN: 323-488-347
+[2017-07-18 23:08:14,256 : INFO : _internal.py : 87 :                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[2017-07-18 23:08:20,863 : INFO : rest_controller_views.py : 51 :             get_data() ] get data by id
+[2017-07-18 23:08:20,864 : INFO : _internal.py : 87 :                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:08:20] "GET /cmd/api/data/1 HTTP/1.1" 200 -
+[2017-07-18 23:08:30,630 : INFO : _internal.py : 87 :                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\app\\database\\repository.py', reloading
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[2017-07-18 23:08:31,260 : INFO : run.py : 14 :             <module>() ] Main started
+[2017-07-18 23:08:31,403 : WARNING : _internal.py : 87 :                 _log() ]  * Debugger is active!
+[2017-07-18 23:08:31,407 : INFO : _internal.py : 87 :                 _log() ]  * Debugger PIN: 323-488-347
+[2017-07-18 23:08:31,416 : INFO : _internal.py : 87 :                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[2017-07-18 23:09:26,576 : INFO : _internal.py : 87 :                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\app\\database\\repository.py', reloading
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[2017-07-18 23:09:27,293 : INFO : run.py : 14 :             <module>() ] Main started
+[2017-07-18 23:09:27,439 : WARNING : _internal.py : 87 :                 _log() ]  * Debugger is active!
+[2017-07-18 23:09:27,443 : INFO : _internal.py : 87 :                 _log() ]  * Debugger PIN: 323-488-347
+[2017-07-18 23:09:27,452 : INFO : _internal.py : 87 :                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[2017-07-18 23:10:05,216 : INFO : _internal.py : 87 :                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\app\\database\\repository.py', reloading
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[2017-07-18 23:10:05,811 : INFO : run.py : 14 :             <module>() ] Main started
+[2017-07-18 23:10:05,958 : WARNING : _internal.py : 87 :                 _log() ]  * Debugger is active!
+[2017-07-18 23:10:05,961 : INFO : _internal.py : 87 :                 _log() ]  * Debugger PIN: 323-488-347
+[2017-07-18 23:10:05,970 : INFO : _internal.py : 87 :                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[2017-07-18 23:10:21,385 : INFO : rest_controller_views.py : 31 :      api_information() ] test from rest
+[2017-07-18 23:10:21,395 : INFO : _internal.py : 87 :                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:10:21] "GET / HTTP/1.1" 200 -
+[2017-07-18 23:10:34,704 : INFO : _internal.py : 87 :                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:10:34] "GET /cmd/api/data HTTP/1.1" 200 -
+[2017-07-18 23:11:41,910 : INFO : _internal.py : 87 :                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\app\\database\\repository.py', reloading
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[2017-07-18 23:11:42,479 : INFO : run.py : 14 :             <module>() ] Main started
+[2017-07-18 23:11:42,625 : WARNING : _internal.py : 87 :                 _log() ]  * Debugger is active!
+[2017-07-18 23:11:42,629 : INFO : _internal.py : 87 :                 _log() ]  * Debugger PIN: 323-488-347
+[2017-07-18 23:11:42,637 : INFO : _internal.py : 87 :                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[2017-07-18 23:11:45,516 : INFO : _internal.py : 87 :                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:11:45] "GET /cmd/api/data HTTP/1.1" 200 -
+[2017-07-18 23:11:57,604 : INFO : _internal.py : 87 :                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:11:57] "GET /cmd/api/data HTTP/1.1" 200 -
+[2017-07-18 23:13:16,590 : INFO : _internal.py : 87 :                 _log() ]  * Detected change in 'C:\\Users\\Espen\\virtualEnvs\\FlaskApi\\app\\database\\repository.py', reloading
+[_internal.py:87 -                 _log() ]  * Restarting with stat
+[2017-07-18 23:14:19,602 : INFO : run.py : 14 :             <module>() ] Main started
+[2017-07-18 23:14:19,746 : INFO : _internal.py : 87 :                 _log() ]  * Restarting with stat
+[2017-07-18 23:14:20,339 : INFO : run.py : 14 :             <module>() ] Main started
+[2017-07-18 23:14:20,480 : WARNING : _internal.py : 87 :                 _log() ]  * Debugger is active!
+[2017-07-18 23:14:20,483 : INFO : _internal.py : 87 :                 _log() ]  * Debugger PIN: 323-488-347
+[2017-07-18 23:14:20,492 : INFO : _internal.py : 87 :                 _log() ]  * Running on http://127.0.0.1:6060/ (Press CTRL+C to quit)
+[2017-07-18 23:14:22,779 : INFO : _internal.py : 87 :                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:14:22] "GET /cmd/api/data HTTP/1.1" 200 -
+[2017-07-18 23:14:35,600 : INFO : rest_controller_views.py : 31 :      api_information() ] test from rest
+[2017-07-18 23:14:35,607 : INFO : _internal.py : 87 :                 _log() ] 127.0.0.1 - - [18/Jul/2017 23:14:35] "GET / HTTP/1.1" 200 -

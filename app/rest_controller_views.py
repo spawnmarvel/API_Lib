@@ -5,12 +5,15 @@ from flask import make_response
 from flask import request
 from flask import render_template
 from flask import url_for
-from flask.ext.httpauth import HTTPBasicAuth
+from flask_httpauth import HTTPBasicAuth
+import logging
+logger = logging.getLogger("rest controller")
 # from flask_sqlalchemy import SQLAlchemy
 
 # app modules
 from app import app
 from .database import repository as rep
+
 auth = HTTPBasicAuth()
 
 # simulating db
@@ -25,6 +28,7 @@ to_do = "TO DO: DB, REDIS, BOOSTRAP API PAGE"
 
 @app.route("/")
 def api_information():
+    logger.info("test from rest")
     return render_template("index.html", version=version, information=information, to_do=to_do)
 
 
@@ -44,6 +48,7 @@ def get_all_data():
 
 @app.route("/cmd/api/data/<int:data_id>", methods=["GET"])
 def get_data(data_id):
+    logger.info("get data by id")
     tmp_data = [da for da in data_repos if da["id"] == data_id]
     if len(tmp_data) == 0:
         abort(404)

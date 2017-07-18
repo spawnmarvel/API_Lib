@@ -1,10 +1,13 @@
+import logging
 
 class Repository():
 	"""docstring for Repository"""
 	def __init__(self):
-		pass
+		self.log = logging.getLogger(self.__class__.__name__)
+		self.log.info("init repository")
 
 	def load_repository(self):
+		self.log.info("started load repository")
 		data_repository = [
     {
         "id": 1,
